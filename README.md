@@ -6,7 +6,7 @@
         <h2>Features</h2>
         <ul>
             <li>✅ User-friendly interface</li>
-            <li>✅ Basic arithmetic operations (+, -, *, /)</li>
+            <li>✅ Standard arithmetic operations (+, -, *, /, 1/x, x<sup>2</sup>..)</li>
             <li>✅ Responsive and easy-to-use buttons</li>
             <li>✅ Displays calculation history</li>
         </ul>
