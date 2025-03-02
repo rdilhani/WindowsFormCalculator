@@ -18,7 +18,7 @@
       <h2>Installation</h2>
         <ol>
             <li>Clone the repository:</li>
-            <pre><code>git clone https://github.com/your-username/windows-forms-calculator.git</code></pre>
+            <pre><code>git clone https://github.com/rdilhani/WindowsFormCalculator.git</code></pre>
             <li>Open the project in <strong>Visual Studio</strong>.</li>
             <li>Build and run the application.</li>
         </ol>
