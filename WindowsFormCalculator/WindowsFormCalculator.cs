@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormCalculator
 {
     public partial class frmSimpleCalculator: Form
@@ -19,9 +21,14 @@ namespace WindowsFormCalculator
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           // txtResult.Text = txtNumber1.Text + txtNumber2.Text; //this is concatenation
-        
-            txtResult.Text = (Convert.ToDouble(txtNumber1.Text) + Convert.ToDouble(txtNumber2.Text)).ToString();
+            // txtResult.Text = txtNumber1.Text + txtNumber2.Text; //this is concatenation
+
+            // txtResult.Text = (Convert.ToDouble(txtNumber1.Text) + Convert.ToDouble(txtNumber2.Text)).ToString();
+
+            double num1 = Convert.ToDouble(txtNumber1.Text);
+            double num2 = Convert.ToDouble(txtNumber2.Text);
+            double result = num1 + num2;
+            txtResult.Text = result.ToString();
 
         }
 

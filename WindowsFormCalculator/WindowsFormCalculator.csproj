@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmStandardCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStandardCalculator.Designer.cs">
+      <DependentUpon>frmStandardCalculator.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsFormCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmStandardCalculator.resx">
+      <DependentUpon>frmStandardCalculator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormCalculator.resx">
       <DependentUpon>WindowsFormCalculator.cs</DependentUpon>
     </EmbeddedResource>
