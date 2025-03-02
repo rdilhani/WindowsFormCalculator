@@ -259,6 +259,7 @@ namespace WindowsFormCalculator
             this.btn2.TabStop = false;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn7
             // 
@@ -294,6 +295,7 @@ namespace WindowsFormCalculator
             this.btn3.TabStop = false;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnAdd
             // 
@@ -363,6 +365,7 @@ namespace WindowsFormCalculator
             this.btn1.TabStop = false;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btnSubtract
             // 
@@ -380,6 +383,7 @@ namespace WindowsFormCalculator
             this.btnSubtract.TabStop = false;
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = false;
+            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
             // 
             // btn9
             // 
@@ -448,6 +452,7 @@ namespace WindowsFormCalculator
             this.btnMultiply.TabStop = false;
             this.btnMultiply.Text = "×";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btnSquare
             // 
