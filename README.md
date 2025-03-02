@@ -2,7 +2,7 @@
 <body>
     <div class="container">
         <h1>Windows Forms Calculator</h1>
-        <p>A simple calculator application built using <strong>C# and Windows Forms</strong>. This app performs basic arithmetic operations, including <strong>addition, subtraction, multiplication, and division</strong>.</p>
+        <p>A simple calculator application built using <strong>C# and Windows Forms</strong>. This app performs standard arithmetic operations, including <strong>addition, subtraction, multiplication, division, 1/x, x<sup>2</sup>..</strong>.</p>
         <h2>Features</h2>
         <ul>
             <li>✅ User-friendly interface</li>
