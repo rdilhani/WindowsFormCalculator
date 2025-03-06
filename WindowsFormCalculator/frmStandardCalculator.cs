@@ -56,7 +56,7 @@ namespace WindowsFormCalculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-            //add exception handling
+            
             isEqualCliked = true;
             string formula = txtFormula.Text;
                 if (!(formula.Contains("=")||specialOperator))
