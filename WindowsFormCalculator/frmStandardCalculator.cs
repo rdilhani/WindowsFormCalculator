@@ -58,15 +58,19 @@ namespace WindowsFormCalculator
         {
             
             isEqualCliked = true;
+            txtFormula.Text += txtResult.Text;
             string formula = txtFormula.Text;
-                if (!(formula.Contains("=")||specialOperator))
-                {
-                    txtFormula.Text += "=";
-                    string s = formula;
-                    txtResult.Text = new DataTable().Compute(formula, null).ToString();
+            if (!(formula.Contains("=") || specialOperator))
+            {
+                txtFormula.Text += "=";
+                string s = formula;
+                txtResult.Text = new DataTable().Compute(formula, null).ToString();
             }
-            else { specialOperator = false;
-            }     
+            else
+            {
+                specialOperator = false;
+            }
+
         }
 
 
@@ -79,31 +83,28 @@ namespace WindowsFormCalculator
                 pointCliked = false;
                 txtResult.Text = "";
             }
-            else { txtResult.Text = btn.Text; 
-            }
-       
-            if (isEqualCliked)
-            {
-                txtFormula.Text = "";
-                isEqualCliked = false;
-            }
             else { 
-            txtFormula.Text += btn.Text;
-            }
+                txtResult.Text += btn.Text; 
+            }           
         }
 
         private void commonOperator_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
+                    
             if (isEqualCliked)
-            {
-                txtFormula.Text = txtResult.Text+btn.Text;
+             {
                 isEqualCliked = false;
+                txtFormula.Text = txtResult.Text+btn.Text;
+                txtResult.Clear();
             }
-            else
-            {
+             else
+             {
+                txtFormula.Text += txtResult.Text;
+                txtResult.Clear();
                 txtFormula.Text += btn.Text;
-            }
+             }
+                  
         }
         private void btnInverse_Click(object sender, EventArgs e)
         {
@@ -111,6 +112,23 @@ namespace WindowsFormCalculator
             txtFormula.Text = txtFormula.Text.Remove(txtFormula.Text.Length - 1);
             txtFormula.Text += "1/" + txtResult.Text;
             txtResult.Text = (1/ Convert.ToDouble(txtResult.Text)).ToString();
+        }
+
+        private void btnPlusMinus_Click(object sender, EventArgs e)
+        {
+            string text = txtResult.Text;
+            if (text.Contains("-"))
+            {
+                txtResult.Text = text.Remove(0, 1);
+            }
+            else
+            {
+                txtResult.Text = "-" + text;
+            }
+        }
+
+        private void calculate() { 
+        
         }
     }
 }

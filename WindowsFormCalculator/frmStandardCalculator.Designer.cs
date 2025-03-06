@@ -212,6 +212,7 @@ namespace WindowsFormCalculator
             this.btnPlusMinus.TabStop = false;
             this.btnPlusMinus.Text = "+/-";
             this.btnPlusMinus.UseVisualStyleBackColor = false;
+            this.btnPlusMinus.Click += new System.EventHandler(this.btnPlusMinus_Click);
             // 
             // btnEqual
             // 
@@ -548,7 +549,6 @@ namespace WindowsFormCalculator
             this.txtResult.Size = new System.Drawing.Size(573, 78);
             this.txtResult.TabIndex = 1;
             this.txtResult.TabStop = false;
-            this.txtResult.Text = "0 ";
             this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtFormula
