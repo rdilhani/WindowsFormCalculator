@@ -23,7 +23,8 @@
             <li>Build and run the application.</li>
         </ol>
      <h2>Screenshots</h2>
-        <p> <img src=https://github.com/user-attachments/assets/967c033d-b76a-4fc0-a2d0-5aaf4ef85213>
+        <p> <img src=https://github.com/user-attachments/assets/38aff5ef-89a9-4193-9555-80a5b81501f1>
+
         </p>
         <h2>Contributions</h2>
         <p>Feel free to fork the repository and submit pull requests to improve the app.</p>
