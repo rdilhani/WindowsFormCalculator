@@ -18,6 +18,7 @@ namespace WindowsFormCalculator
         bool specialOperator = false;
         private void btnBack_Click(object sender, EventArgs e)
         {
+            if (txtFormula.Text.Length > 0)
             txtResult.Text = txtFormula.Text.Remove(txtFormula.Text.Length - 1);
         }
        
@@ -77,15 +78,8 @@ namespace WindowsFormCalculator
         private void commonButton_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            if (pointCliked)
-            {
-                txtFormula.Text += ".";
-                pointCliked = false;
-                txtResult.Text = "";
-            }
-            else { 
-                txtResult.Text += btn.Text; 
-            }           
+            txtResult.Text += btn.Text; 
+                  
         }
 
         private void commonOperator_Click(object sender, EventArgs e)
@@ -127,8 +121,5 @@ namespace WindowsFormCalculator
             }
         }
 
-        private void calculate() { 
-        
-        }
     }
 }
