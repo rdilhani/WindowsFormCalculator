@@ -52,19 +52,10 @@
     <Compile Include="frmStandardCalculator.Designer.cs">
       <DependentUpon>frmStandardCalculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowsFormCalculator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WindowsFormCalculator.Designer.cs">
-      <DependentUpon>WindowsFormCalculator.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmStandardCalculator.resx">
       <DependentUpon>frmStandardCalculator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WindowsFormCalculator.resx">
-      <DependentUpon>WindowsFormCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

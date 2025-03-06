@@ -79,6 +79,7 @@ namespace WindowsFormCalculator
             this.btnBack.TabStop = false;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnClear
             // 
@@ -96,6 +97,7 @@ namespace WindowsFormCalculator
             this.btnClear.TabStop = false;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClearEntry
             // 
@@ -113,6 +115,7 @@ namespace WindowsFormCalculator
             this.btnClearEntry.TabStop = false;
             this.btnClearEntry.Text = "CE";
             this.btnClearEntry.UseVisualStyleBackColor = false;
+            this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
             // 
             // btnPercent
             // 
@@ -133,6 +136,7 @@ namespace WindowsFormCalculator
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Silver;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -162,7 +166,7 @@ namespace WindowsFormCalculator
             this.tableLayoutPanel1.Controls.Add(this.btnClearEntry, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnClear, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnBack, 3, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(14, 176);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 157);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -190,6 +194,7 @@ namespace WindowsFormCalculator
             this.btn0.TabStop = false;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btnPlusMinus
             // 
@@ -211,7 +216,7 @@ namespace WindowsFormCalculator
             // btnEqual
             // 
             this.btnEqual.AutoSize = true;
-            this.btnEqual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnEqual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnEqual.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEqual.FlatAppearance.BorderSize = 0;
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -242,6 +247,7 @@ namespace WindowsFormCalculator
             this.btnPoint.TabStop = false;
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = false;
+            this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
             // btn2
             // 
@@ -259,7 +265,7 @@ namespace WindowsFormCalculator
             this.btn2.TabStop = false;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn7
             // 
@@ -277,7 +283,7 @@ namespace WindowsFormCalculator
             this.btn7.TabStop = false;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn3
             // 
@@ -295,7 +301,7 @@ namespace WindowsFormCalculator
             this.btn3.TabStop = false;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btnAdd
             // 
@@ -313,7 +319,7 @@ namespace WindowsFormCalculator
             this.btnAdd.TabStop = false;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.commonOperator_Click);
             // 
             // btn6
             // 
@@ -331,6 +337,7 @@ namespace WindowsFormCalculator
             this.btn6.TabStop = false;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn5
             // 
@@ -348,6 +355,7 @@ namespace WindowsFormCalculator
             this.btn5.TabStop = false;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn1
             // 
@@ -365,7 +373,7 @@ namespace WindowsFormCalculator
             this.btn1.TabStop = false;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btnSubtract
             // 
@@ -383,7 +391,7 @@ namespace WindowsFormCalculator
             this.btnSubtract.TabStop = false;
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = false;
-            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
+            this.btnSubtract.Click += new System.EventHandler(this.commonOperator_Click);
             // 
             // btn9
             // 
@@ -401,6 +409,7 @@ namespace WindowsFormCalculator
             this.btn9.TabStop = false;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn8
             // 
@@ -418,6 +427,7 @@ namespace WindowsFormCalculator
             this.btn8.TabStop = false;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btn4
             // 
@@ -435,6 +445,7 @@ namespace WindowsFormCalculator
             this.btn4.TabStop = false;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.commonButton_Click);
             // 
             // btnMultiply
             // 
@@ -450,9 +461,9 @@ namespace WindowsFormCalculator
             this.btnMultiply.Size = new System.Drawing.Size(138, 100);
             this.btnMultiply.TabIndex = 13;
             this.btnMultiply.TabStop = false;
-            this.btnMultiply.Text = "×";
+            this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = false;
-            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
+            this.btnMultiply.Click += new System.EventHandler(this.commonOperator_Click);
             // 
             // btnSquare
             // 
@@ -470,6 +481,7 @@ namespace WindowsFormCalculator
             this.btnSquare.TabStop = false;
             this.btnSquare.Text = "x²";
             this.btnSquare.UseVisualStyleBackColor = false;
+            this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btnInverse
             // 
@@ -487,6 +499,7 @@ namespace WindowsFormCalculator
             this.btnInverse.TabStop = false;
             this.btnInverse.Text = "1/x";
             this.btnInverse.UseVisualStyleBackColor = false;
+            this.btnInverse.Click += new System.EventHandler(this.btnInverse_Click);
             // 
             // btnSquareRoot
             // 
@@ -504,6 +517,7 @@ namespace WindowsFormCalculator
             this.btnSquareRoot.TabStop = false;
             this.btnSquareRoot.Text = "√x";
             this.btnSquareRoot.UseVisualStyleBackColor = false;
+            this.btnSquareRoot.Click += new System.EventHandler(this.btnSquareRoot_Click);
             // 
             // btnDivide
             // 
@@ -519,18 +533,19 @@ namespace WindowsFormCalculator
             this.btnDivide.Size = new System.Drawing.Size(138, 100);
             this.btnDivide.TabIndex = 9;
             this.btnDivide.TabStop = false;
-            this.btnDivide.Text = "÷";
+            this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = false;
+            this.btnDivide.Click += new System.EventHandler(this.commonOperator_Click);
             // 
             // txtResult
             // 
             this.txtResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtResult.Font = new System.Drawing.Font("Segoe UI", 32F);
             this.txtResult.ForeColor = System.Drawing.Color.White;
-            this.txtResult.Location = new System.Drawing.Point(14, 96);
+            this.txtResult.Location = new System.Drawing.Point(10, 77);
             this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(573, 71);
+            this.txtResult.Size = new System.Drawing.Size(573, 78);
             this.txtResult.TabIndex = 1;
             this.txtResult.TabStop = false;
             this.txtResult.Text = "0 ";
@@ -539,14 +554,14 @@ namespace WindowsFormCalculator
             // txtFormula
             // 
             this.txtFormula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFormula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtFormula.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtFormula.Enabled = false;
             this.txtFormula.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
             this.txtFormula.ForeColor = System.Drawing.Color.White;
-            this.txtFormula.Location = new System.Drawing.Point(14, 28);
+            this.txtFormula.Location = new System.Drawing.Point(10, 9);
             this.txtFormula.Name = "txtFormula";
             this.txtFormula.ReadOnly = true;
-            this.txtFormula.Size = new System.Drawing.Size(576, 63);
+            this.txtFormula.Size = new System.Drawing.Size(573, 70);
             this.txtFormula.TabIndex = 2;
             this.txtFormula.TabStop = false;
             this.txtFormula.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -555,8 +570,8 @@ namespace WindowsFormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(600, 826);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(593, 803);
             this.Controls.Add(this.txtFormula);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -566,7 +581,7 @@ namespace WindowsFormCalculator
             this.MaximizeBox = false;
             this.Name = "frmSatndardCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Simple Calculator";
+            this.Text = " Calculator";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
